@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="244dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="84dp"
+        android:text="LLUEVEE SOBRE LA CIUDAAAAD"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/Cod"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:hint="Ingresa el código"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Ciudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/Ciudad"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="228dp"
+        android:hint="Ingresa la ciudad"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/codedep"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="96dp"
+        android:hint="Ingresa el codigo del dep"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginBottom="64dp"
+        android:text="Insertar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
