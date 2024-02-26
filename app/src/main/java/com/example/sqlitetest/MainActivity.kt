@@ -27,9 +27,16 @@ class MainActivity : AppCompatActivity() {
             val cod = binding.Cod.text.toString().toInt()
             val ciudad = binding.Ciudad.text.toString()
             val editTextValue = binding.codedep.text.toString().toInt()
+            Toast.makeText(this, "Datos insertados", Toast.LENGTH_SHORT).show()
             manager.insertData(cod, ciudad, editTextValue)
 
 
+
+        }
+
+        binding.verData.setOnClickListener {
+            val intent=Intent(this, Listar::class.java)
+            startActivity(intent)
         }
         //Toast.makeText(this, cod, Toast.LENGTH_SHORT).show()
         //val db=dbHelper.writableDatabase //Abrir db en modo escritura

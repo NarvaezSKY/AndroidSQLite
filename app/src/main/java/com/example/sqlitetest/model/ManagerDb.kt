@@ -39,6 +39,35 @@ data class ManagerDb (val context: Context) {
         //inserting data
         return bd.insert("datos", null, contenedor2)
     }
+    fun getData():ArrayList<Ciudad>{
+        openDbRd()
+
+        val ciudadLista= ArrayList<Ciudad>()
+        val cursor=  bd.rawQuery(Constantes.GETDATA, null )
+
+        if (cursor.moveToFirst()){
+        //verifica si hay datos en la primera posicion del cursor
+            do{
+                val ciudadCod = cursor.getColumnIndex("cod")
+                val ciudadNombre = cursor.getColumnIndex("nombre")
+                val codDep = cursor.getColumnIndex("codedep")
+
+                val cod=cursor.getInt(ciudadCod)?:""
+                val nombre=cursor.getString(ciudadNombre)?:""
+                val dep=cursor.getInt(codDep)?:""
+
+                //almacenando en variables
+                val ciudad = Ciudad(cod, nombre, dep)
+                //valores del cursos a la clase ciudad
+
+                ciudadLista.add(ciudad)
+                //agrego ciudad al array
+
+            }while(cursor.moveToNext())
+            //ciclo hasta el cursos moviendose a la siguiente posicion
+        }
+    return ciudadLista
+    }
 
 
 }

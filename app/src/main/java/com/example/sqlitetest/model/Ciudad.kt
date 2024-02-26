@@ -1,4 +1,4 @@
 package com.example.sqlitetest.model
 
-class Ciudad {
+data class Ciudad(val cod: Comparable<*>, val nombre: Comparable<*>, val codedep: Comparable<*>){
 }

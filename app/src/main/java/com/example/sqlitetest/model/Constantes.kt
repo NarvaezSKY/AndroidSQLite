@@ -8,6 +8,7 @@ class Constantes {
         //tabla
         const val TABLE="Create table ciudad (cod int, nombre text, codedep int)"
         const val DATOS="Create table datos (cod int, nombre text, apellido text, telefono integer, direccion text, ciudad text)"
+        const val GETDATA="select * from ciudad"
     }
 
 }

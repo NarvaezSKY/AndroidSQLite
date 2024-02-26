@@ -20,6 +20,32 @@
 
 
     <EditText
+        android:id="@+id/codedep"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="52dp"
+        android:hint="Ingresa el codigo del dep"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/Ciudad"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="184dp"
+        android:hint="Ingresa la ciudad"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </EditText>
+
+    <EditText
         android:id="@+id/Cod"
         android:layout_width="299dp"
         android:layout_height="48dp"
@@ -29,33 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.691">
-
-    </EditText>
-
-    <EditText
-        android:id="@+id/Ciudad"
-        android:layout_width="299dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="228dp"
-        android:hint="Ingresa la ciudad"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent">
-
-    </EditText>
-
-    <EditText
-        android:id="@+id/codedep"
-        android:layout_width="299dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="96dp"
-        android:hint="Ingresa el codigo del dep"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintVertical_bias="0.729">
 
     </EditText>
 
@@ -63,14 +63,24 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="104dp"
         android:text="Insertar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
     </Button>
 
+    <Button
+        android:id="@+id/verData"
+        android:layout_width="97dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="28dp"
+        android:text="Ver datos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
